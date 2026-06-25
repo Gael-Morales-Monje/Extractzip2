@@ -1,7 +1,7 @@
 
 
 #include "comands.h"
-// #include <sys/wait.h>
+
 
 int main (int argc, char *argv[]) {
 
@@ -10,7 +10,6 @@ int main (int argc, char *argv[]) {
 	fscanf(ap,"%s",path);
 	fclose(ap);
 
-	
 
 	chdir(path);
 	system("ls > tem.dat");
@@ -23,7 +22,6 @@ int main (int argc, char *argv[]) {
 	}
 	
 	rewind(af);
-	
 
 	char list[count][50];
 	int i = 0;
@@ -31,11 +29,9 @@ int main (int argc, char *argv[]) {
 	
 	fclose(af);
 
-	
 	for (int i = 0; i < count; i++) {
 		printf("%s\n",list[i]);
 	}
-
 
 	chdir("new8");
 	system("ls > zip.name");

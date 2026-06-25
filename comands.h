@@ -65,7 +65,7 @@ void Search(FILE *test,char search[],char end,char rt[]) {
                     }
                 } else {
                     count = 1;
-                    
+                    break;
                 }
             }
         }
@@ -83,4 +83,23 @@ void Search(FILE *test,char search[],char end,char rt[]) {
         }
     }
     
+}
+
+
+
+
+void ExtractName(FILE *file) {
+    char Emisor[12] = "cfdi:Emisor";
+    char REceptor[14] = "cfdi:Receptor";
+
+
+
+    char StrEmisor[100];
+
+    Search(file,Emisor,'>',StrEmisor);
+
+    printf("%s",StrEmisor);
+
+
+
 }

@@ -1,0 +1,1 @@
+cp new8/CFDI_43C8397A-F67A-4566-8659-8C1935478FEC_19_05_2026.zip /home/gael/Downloads

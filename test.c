@@ -1,26 +1,27 @@
 #include<stdio.h>
-
+#include<string.h>
 
 #define CHARMAX 200
-void array(char a[][CHARMAX]);
 
+#include "comands.h"
 
 
 int main() {
 
+    char name[CHARMAX];
 
-    char pepe[3][20];
+    char bus[30] = "Nombre=\"";
 
-    array(pepe);
-
-
-    printf("%s",pepe);
-
-    return 0;
-}
+    FILE *f = fopen("new/0c69630b-e478-4388-a0fa-a106d8cc0b53.xml","r");
 
 
-void array(char a[][CHARMAX]){
+    char rt[100];
+    Search(f,bus,rt);
+    // printf("%s\n",rt);
+    fclose(f);
 
     
+
+    printf("%s",rt);
 }
+
